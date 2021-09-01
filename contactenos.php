@@ -25,7 +25,7 @@
     <h1>Contáctenos</h1>
   </div>
   <<div class="container">
-    <form action="conexion.php" method="POST">
+    <form action="enviar.php" method="POST">
         <div class="form-group">
             <label for="nombre">Nombres *</label>
             <input type="text" name="nombre" class="form-control" placeholder="Ingrese su Nombre y Apellidos">

@@ -1,3 +1,4 @@
+<?php include("db.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,13 +23,24 @@
     <br>
 <br><br>
 <h2>Mensajes Recibidos</h2>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br> 
-      <
-      
+
+      <br><br>
+ <div class="container">
+     <div class="col-12">
+         <table class="table table-success table-striped">
+         <thead>
+         <tr>
+         <th scope="col">nomensaje</th>
+         <th scope="col">Nombre</th>
+         <th scope="col">Telefono</th>
+         <th scope="col">Correo</th>
+         <th scope="col">Mensaje</th>
+         </tr>
+         </thead>
+         </tbody>
+         </table>
+        </div>
+  </div>
 <br><br>
 <div class="container">
     <table border="1" width="100%" >
