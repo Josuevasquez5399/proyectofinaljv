@@ -1,6 +1,6 @@
-<?php include("db.php"); ?>
+<?php include ("db.php"); ?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
 
     <meta charset="utf-8">
@@ -25,22 +25,38 @@
 <h2>Mensajes Recibidos</h2>
 
       <br><br>
+      <center>
  <div class="container">
      <div class="col-12">
-         <table class="table table-success table-striped">
+     <table class="table table-dark">
          <thead>
-         <tr>
-         <th scope="col">nomensaje</th>
+        <tr>
          <th scope="col">Nombre</th>
          <th scope="col">Telefono</th>
          <th scope="col">Correo</th>
          <th scope="col">Mensaje</th>
          </tr>
          </thead>
-         </tbody>
-         </table>
-        </div>
+<br><br>
+<tbody>
+    <?php
+    $query="SELECT * FROM mensajes";
+    $resultat=mysqli_query($conn,$query);
+    while ($row=mysqli_fetch_array($resultat)){ ?>
+    <tr> 
+    <td><?php echo $row ['nombre'] ?> </td>
+    <td><?php echo $row ['telefono'] ?> </td>
+    <td><?php echo $row ['correo'] ?> </td>
+    <td><?php echo $row ['mensaje'] ?> </td>
+    <td>
+    </td>
+    </tr>
+    <?php } ?>
+    </tbody>
+    </table>
+    </div>
   </div>
+  </center>
 <br><br>
 <div class="container">
     <table border="1" width="100%" >

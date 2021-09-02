@@ -1,5 +1,5 @@
 <?php 
-include("enviar.php");
+include("db.php");
 
 if (isset($_POST['enviar'])) {
     $nomensaje=$_POST['nomensaje'];
@@ -8,10 +8,14 @@ if (isset($_POST['enviar'])) {
     $correo=$_POST['correo'];
     $mensaje=$_POST['mensaje'];
 
-    $query="INSERT INTO mensajes (nomensaje, nombre, telefono, correo, mensaje) VALUES ('$nomensaje', '$nombre', '$telefono', '$correo', '$mensaje')";
+    $query="INSERT INTO mensajes (nomensaje, nombre, telefono, correo, mensaje) 
+    VALUES ('$nomensaje', '$nombre', '$telefono', '$correo', '$mensaje')";
     $resultado=mysqli_query($conn,$query);
     if ($resultado) {
-    header ('location: contactenos.php');
+    echo '<script lenguage="javascript">';
+    echo 'alert("Tu mensaje ha sido enviado")
+    window.location = "contactenos.php";
+    </script>';
     }
 }
 ?>
