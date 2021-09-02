@@ -21,29 +21,26 @@
     <div class="container">
     <h1>Contáctenos</h1>
   </div>
-    <<div class="container">
     <form action="enviar.php" method="POST">
-        <div class="form-group">
-            <label for="nombre">Nombres *</label>
-            <input type="text" name="nombre" class="form-control" placeholder="Ingrese su Nombre y Apellidos">
-            <small id="nombre" class="form-text text-muted"></small>
-          </div>
-          <div class="form-group">
-            <label for="telefono">Telefono / Celular</label>
-            <input type="text" name="telefono" class="form-control" placeholder="Ingresa tu Numero de celular" >
-            <small id="numero" class="form-text text-muted"></small>
-          </div>
-        <div class="form-group">
-          <label for="correo">Correo Electronico *</label>
-          <input type="email" name="correo" class="form-control"   placeholder="Ingresa tu Correo Electronico">
-          <small id="emailHelp" class="form-text text-muted"></small>
-        </div>
-        <div class="form-group">
-          <label for="mensaje">Mensaje *</label>
-          <input type="text"  name="mensaje" class="form-control"  placeholder="Ingrese su mensaje" >
-        </div>
-        <br>
-       <center> <input type="submit" class="btn btn-primary" value="Enviar Mensaje" name="enviar"></center>
+    <div class="container">
+    <br>
+    <h5>No. Mensaje*</h5>
+    <input type="text" placeholder="Ingresa un numero" name="nomensaje" size="185">
+    <br><br>
+    <h5>Nombres*</h5>
+    <input type="text" placeholder="Ingresa tu nombre y apellido" name="nombre" size="185">
+    <br><br>
+    <h5>Telefóno/Celular</h5>
+    <input type="text" placeholder="Ingresa tu Numero de celular" name="telefono" size="185">
+    <br><br>
+    <h5>Correo Electronico*</h5>
+    <input type="email" placeholder="Ingresa tu Correo Electronico" name="correo" size="185">
+    <br><br>
+    <h5>Mensaje*</h5>
+    <input type="text" placeholder="Ingrese su mensaje" name="mensaje" size="185">
+    </div>
+    <br><br>
+    <center> <input type="submit" class="btn btn-primary" value="Enviar Mensaje" name="enviar"></center>
       </form>
 </div>
   <br><br>

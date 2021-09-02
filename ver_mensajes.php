@@ -28,9 +28,9 @@
       <center>
  <div class="container">
      <div class="col-12">
-     <table class="table table-dark">
+         <table class="table table-dark table-striped"> 
          <thead>
-        <tr>
+         <tr>
          <th scope="col">Nombre</th>
          <th scope="col">Telefono</th>
          <th scope="col">Correo</th>
@@ -71,4 +71,5 @@
   <br>
   
 </body>
+</html>
 </html>
