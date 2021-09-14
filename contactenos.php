@@ -20,28 +20,29 @@
     <br>
     <div class="container">
     <h1>Contáctenos</h1>
-  </div>
+  
     <form action="enviar.php" method="POST">
     <div class="container">
     <br>
     <h5>No. Mensaje*</h5>
-    <input type="text" placeholder="Ingresa un numero" name="nomensaje" size="185">
+    <input type="text" placeholder="Ingresa un numero" name="nomensaje" size="178">
     <br><br>
     <h5>Nombres*</h5>
-    <input type="text" placeholder="Ingresa tu nombre y apellido" name="nombre" size="185">
+    <input type="text" placeholder="Ingresa tu nombre y apellido" name="nombre" size="178">
     <br><br>
     <h5>Telefóno/Celular</h5>
-    <input type="text" placeholder="Ingresa tu Numero de celular" name="telefono" size="185">
+    <input type="text" placeholder="Ingresa tu Numero de celular" name="telefono" size="178">
     <br><br>
     <h5>Correo Electronico*</h5>
-    <input type="email" placeholder="Ingresa tu Correo Electronico" name="correo" size="185">
+    <input type="email" placeholder="Ingresa tu Correo Electronico" name="correo" size="178">
     <br><br>
     <h5>Mensaje*</h5>
-    <input type="text" placeholder="Ingrese su mensaje" name="mensaje" size="185">
+    <input type="text" placeholder="Ingrese su mensaje" name="mensaje" size="178">
     </div>
     <br><br>
     <center> <input type="submit" class="btn btn-primary" value="Enviar Mensaje" name="enviar"></center>
       </form>
+</div>
 </div>
   <br><br>
   <div class="container">
